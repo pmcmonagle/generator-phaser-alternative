@@ -1,0 +1,34 @@
+{
+  "name": "generator-phaser-alternative",
+  "version": "0.1.0",
+  "description": "An alternative Phaser generator for Yoeman; done just the way I like it.",
+  "main": "generators/app/index.js",
+  "scripts": {
+    "test": "mocha tests/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pmcmonagle/generator-phaser-alternative.git"
+  },
+  "keywords": [
+    "yeoman-generator",
+    "phaser",
+    "browserify"
+  ],
+  "author": "Paul McMonagle <mcmonagle.paul@gmail.com> (http://github.com/pmcmonagle)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pmcmonagle/generator-phaser-alternative/issues"
+  },
+  "homepage": "https://github.com/pmcmonagle/generator-phaser-alternative",
+  "dependencies": {
+    "yeoman-generator": "~0.16.0",
+    "chalk": "~0.4.0"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  },
+  "peerDependencies": {
+    "yo": ">=1.0.0"
+  }
+}

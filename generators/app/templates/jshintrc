@@ -1,0 +1,8 @@
+{
+    "browserify": true,
+    "browser":    true,
+    "devel":      true,
+    "predef": [
+        "Phaser"
+    ]
+}
