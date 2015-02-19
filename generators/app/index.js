@@ -1,7 +1,9 @@
 var generators = require('yeoman-generator')
   , util       = require('util')
   , path       = require('path')
-  , chalk      = require('chalk');
+  , chalk      = require('chalk')
+  , foldername = path.basename(process.cwd());
+
 module.exports = generators.Base.extend({
     init: function () {
         this.on('end', function () {
