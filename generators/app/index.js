@@ -18,8 +18,9 @@ module.exports = generators.Base.extend({
         this.log(chalk.magenta('Alternative Phaser Generator'));
     },
 
-    prompt: function () {
-        var prompts = [
+    runPrompt: function () {
+        var done    = this.async()
+          , prompts = [
             {
                 type:    'input',
                 name:    'projectName',
