@@ -1,6 +1,6 @@
 {
   "name": "generator-phaser-alternative",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "An alternative Phaser generator for Yoeman; done just the way I like it.",
   "main": "generators/app/index.js",
   "scripts": {
