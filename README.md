@@ -22,6 +22,19 @@ $ yo phaser-alternative
 ```
 
 
+## Sub-Generators
+This generator includes sub-generators to help set up the boiler-plate
+for states and (coming soon) other classes.
+
+When adding new states, the game.state.add() method call is automagically
+added to your main.js file. Neat!
+
+To add a new state called 'menu' to your game:
+```
+$ yo phaser-alternative:state menu
+```
+
+
 ## Building and Running
 This generator favors npm build scripts and browserify over other
 build tools such as gulp or grunt.
