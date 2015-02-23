@@ -28,11 +28,18 @@ module.exports = generators.Base.extend({
                 name:    'projectName',
                 message: 'What is the title of your project?',
                 default: foldername
+            },
+            {
+                type:    'input',
+                name:    'targetVersion',
+                message: 'Which version of phaser would you like to target?',
+                default: 'latest'
             }
         ];
 
         this.prompt(prompts, function (properties) {
-            this.projectName = properties.projectName || ' ';
+            this.projectName   = properties.projectName   || ' ';
+            this.targetVersion = properties.targetVersion || 'latest';
             done();
         }.bind(this));
     },
