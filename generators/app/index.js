@@ -58,6 +58,7 @@ module.exports = generators.Base.extend({
 
         this.copy('gitignore', '.gitignore');
         this.copy('jshintrc', '.jshintrc');
+        this.copy('jscsrc', '.jscsrc');
         this.template('_README.md', 'README.md');
         this.template('_package.json', 'package.json');
 
