@@ -15,6 +15,7 @@
   "devDependencies": {
     "beefy":      "^2.1.3",
     "browserify": "^8.1.3",
+    "jscs":       "^1.13.1",
     "jshint":     "^2.6.0",
     "mocha":      "^2.1.0",
     "ncp":        "^1.0.1",
@@ -23,9 +24,11 @@
   },
 
   "scripts": {
-    "clean": "rimraf dist/*",
-    "lint":  "jshint src/**/*.js",
-    "test":  "mocha tests/",
+    "clean":    "rimraf dist/*",
+    "jscs":     "jscs src/**/*.js || true",
+    "lint":     "jshint src/**/*.js",
+    "postlint": "npm run jscs",
+    "test":     "mocha tests/",
 
     "build:html":   "ncp src/index.html dist/index.html",
     "build:assets": "ncp assets dist/assets",
