@@ -17,6 +17,7 @@
     "browserify": "^8.1.3",
     "jscs":       "^1.13.1",
     "jshint":     "^2.6.0",
+    "mkdirp":     "^0.5.0",
     "mocha":      "^2.1.0",
     "ncp":        "^1.0.1",
     "rimraf":     "^2.2.8",
@@ -24,6 +25,7 @@
   },
 
   "scripts": {
+    "preclean": "mkdirp dist",
     "clean":    "rimraf dist/*",
     "jscs":     "jscs src/**/*.js || true",
     "lint":     "jshint src/**/*.js",
