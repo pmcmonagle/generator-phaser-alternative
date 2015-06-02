@@ -1,5 +1,7 @@
 'use strict';
 
+/* jscs:disable */
+/* jshint ignore:start */
 var BootState    = require('./states/Boot')
   , PreloadState = require('./states/Preload')
   , TitleState   = require('./states/Title')
@@ -22,3 +24,5 @@ game.state.add('title',   TitleState);
 // injection of new states by the generator.
 
 game.state.start('boot');
+/* jshint ignore:end */
+/* jscs:enable */
