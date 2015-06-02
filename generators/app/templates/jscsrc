@@ -6,5 +6,9 @@
 
     "disallowSpacesInAnonymousFunctionExpression": null,
     "disallowSpacesInFunctionDeclaration":         null,
-    "disallowSpacesInFunctionExpression":          null
+    "disallowSpacesInFunctionExpression":          null,
+
+    "requirePaddingNewLinesAfterBlocks": {
+        "allExcept": ["inCallExpressions", "inArrayExpressions", "inProperties"]
+    }
 }

@@ -27,8 +27,8 @@
   "scripts": {
     "preclean": "mkdirp dist",
     "clean":    "rimraf dist/*",
-    "jscs":     "jscs src/**/*.js || true",
-    "lint":     "jshint src/**/*.js",
+    "jscs":     "jscs src || true",
+    "lint":     "jshint src",
     "postlint": "npm run jscs",
     "test":     "mocha tests/",
 
