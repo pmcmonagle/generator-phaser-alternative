@@ -39,6 +39,6 @@
     "prebuild":     "npm run clean",
     "build":        "npm run build:html && npm run build:assets && npm run build:js",
 
-    "start": "beefy src/main.js:main.min.js --live --open --index=src/index.html"
+    "start": "beefy src/main.js:main.min.js --cwd . --live --open --index=src/index.html"
   }
 }
